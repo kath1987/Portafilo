@@ -1,0 +1,264 @@
+body{
+    background-color: rgb(212, 255, 221);
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+header img{
+    display: flex;
+    width: 150px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+header ul li{
+    margin: 20px;
+}
+.muestras iframe{
+
+    padding: 10px;
+    margin: 10px;
+}
+.bienvenida{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(212, 255, 221);
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    background-color: #85d479;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido p{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.contenido ol li{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.contenido h1{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.contenido h2{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.Historia{
+    width: 100%;
+    height: 100%;
+    background-color: #57A64B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 5s;
+    animation-name: intro;
+}
+
+
+.Historia h1{
+    color:aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Historia p{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+@keyframes intro {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.bienvenida h1{
+    color: black;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    width: 250px;
+    filter: sepia(5px);
+
+}
+
+.hola{
+    animation: zoom 5s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+h1{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 20px;
+    color: rgb(64, 97, 126);
+}
+
+.contenedor{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #57A64B;
+    border-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.caja{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+}
+
+.caja img{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.caja p{
+    font-size: 20px;
+    color:aliceblue;
+}
+
+.caja ul li{
+    font-size: 20px;
+    color:aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .contenedor2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .noticias {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+  }
+  .noticias h1 {
+    font-size: 21px;
+    color: rgb(16, 92, 16);
+    text-align: justify;
+  }
+  .noticias p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  button {
+    background-color: rgb(3, 79, 12);
+    color: white;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgb(143, 242, 143);
+    height: 100px;
+  }
+  footer a {
+    color: rgb(3, 68, 3);
+  }
+  
+  .btn-primary {
+    border: solid 1px hsl(136, 97%, 20%);
+    background-color: hsl(136, 97%, 30%);
+  }
+  
+  .btn-primary:focus,
+  .btn-primary:hover {
+    box-shadow: none;
+    border: solid 1px hsl(136, 97%, 30%);
+    background-color: hsl(136, 97%, 20%);
+  }
+  
