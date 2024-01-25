@@ -1,0 +1,95 @@
+<h1>Factura </h1>
+<button id="p1" onclick="selProdF1(0)">Acetaminofen</button>
+<button id="p2" onclick="selProdF1(1)">Loratadina</button>
+<button id="p3" onclick="selProdF1(2)">Ibuprofeno</button>
+<button id="p4" onclick="selProdF1(3)">Diclofenato</button>
+<hr>
+<script>
+var productos = [
+    ["01","Acetaminofen", 28.99],
+    ["02","Loratadina", 100.90],
+    ["03","Ibrupofen", 325.50],
+    ["04","Diclofenato", 260.10]
+    ];
+var tablahtml = "";
+ 
+//FACTURA 1 ---------------------------------------------
+//funcion para los botones de prod
+function selProdF1(id){
+//ubicando variables de la tabla
+var detalles = document.querySelector("#detalle1"),
+codigos = document.querySelectorAll(".codigosF1"),
+cantidades = document.querySelectorAll(".cantidadesF1"),
+montos = document.querySelectorAll(".montosF1"),
+total = document.querySelector("#totalF1");
+
+//Identificando produc iguales para aumentar cantidad
+for (i=0; i < codigos.length; i++){ //iniciando un bucle para la class
+
+//Comparando el arreglo con el cod escrito en la tabla
+if (productos[id][0] == codigos[i].innerHTML){
+
+//suma de cantidades --- DEBE ARREGLAR ESTE CODIGO
+cantidades[i].innerHTML= parseInt(cantidades[i].innerHTML) + 1; 
+//multiplicando cantidad * precio --- DEBE ARREGLAR  ESTE CODIGO
+ montos[i].innerHTML = cantidades[i].innerHTML * productos[id] [2];
+}
+}
+
+//Calculando la tabla
+var suma = 0.00; //suma se declara como decimal
+for (i=0; i < codigos.length; i++){
+suma +=  parseFloat(montos[i].innerHTML); //MENTIROSOOOOOO 
+}
+//Colocando el total de suma
+total.innerHTML = suma.toFixed(2); //fixed muestra los decimales
+}
+
+//IIIIIMMMMPPPPRRREEEEESSSSIIIIIIOOOONNNN
+function facturar(){
+//creando una ventana para ubicar el recibo
+var ventana = window.open('', 'PRINT', 'height=400,width=600');
+var fecha = new Date();
+var numrecibo = Math.ceil(Math.random()*100) ;
+
+
+//insertando el html a imprimir
+
+var htmlrecibo = '<h1><i>Recibo de pago para impresión</i></h1><br><i><h2>PANNTYS</h1></i>'; //este es el encabezado
+
+//escribiendo
+ventana.document.write(htmlrecibo);
+ventana.document.write('<i><h3>Fecha:  ' + fecha.getDate() + "/" + (fecha.getMonth() +1) + "/" + fecha.getFullYear() + '</h3></i>');
+ventana.document.write('<i><h3>No. de recibo:  ' + numrecibo + '</h3></i>');
+ventana.document.write( document.getElementById("factura1").innerHTML);
+
+
+ventana.document.close(); //se debe cerrar el html
+ventana.print(); //ejecutando la funcion interna imprimir
+}
+</script>
+<section id="factura1"> 
+<table border="1" id="tabla1">
+  <tr>
+    <th>#</th>
+    <th>Descripcion</th>
+    <th>Cantidad</th>
+    <th>Precio</th> 
+  </tr> 
+  <tbody id="detalle1">
+    <tr> 
+      
+    </tr>
+    <tr>
+     
+    </tr>
+  </tbody>
+  <tr>
+    <td colspan="3">Total</td>
+    <td id="totalF1">0.00</td>
+  </tr>
+</table>
+</section>
+<br>
+<button onclick="facturar();">imprimir</button>
+<hr>
