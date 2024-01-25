@@ -1,0 +1,285 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tele{
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    margin: 5px auto;
+    margin-top: 0px;
+    border: solid 5px;
+    position: absolute;
+    margin-left:100px;
+    
+    }
+.contenedor{
+    background-color: #000000 ;
+    width: 200px;
+    height: 500px;
+    margin: 5px auto;
+    margin-top: 20px;
+    border: solid 2px;
+}
+
+
+
+.numero1{
+    
+    margin-left: 25px;
+    margin-top: 50px ;
+    position: absolute;
+}
+
+.numero2{
+    margin-left: 80px;
+    margin-top: 50px ;
+    position: absolute;
+}
+
+.numero3{
+    margin-left: 140px;
+    margin-top: 50px ;
+    position: absolute;
+}
+
+.numero4{
+    margin-left: 25px;
+    margin-top: 80px ;
+    position: absolute;
+}
+
+.numero5{
+    margin-left: 80px;
+    margin-top: 80px ;
+    position: absolute;
+}
+
+.numero6{
+    margin-left: 140px;
+    margin-top: 80px ;
+    position: absolute;
+}
+
+.numero7{
+    margin-left: 25px;
+    margin-top: 110px ;
+    position: absolute;
+}
+
+.numero8{
+    margin-left: 80px;
+    margin-top: 110px ;
+    position: absolute;
+
+}
+
+.numero9{
+    margin-left: 140px;
+    margin-top: 110px ;
+    position: absolute;
+}
+
+.numero0{
+    margin-left: 80px;
+    margin-top: 150px ;
+    position: absolute;
+}
+
+.Menu{
+    margin-left: 20px;
+    margin-top: 180px ;
+    position: absolute;
+}
+
+.Exit{
+    margin-left: 130px;
+    margin-top: 180px ;
+    position: absolute;
+}
+
+.Power{
+    margin-left: 140px;
+    margin-top: 20px ;
+    position: absolute;
+    background-color: rgb(209, 69, 44);
+}
+
+.mas{
+    margin-left: 25px;
+    margin-top: 300px ;
+    position: absolute;
+}
+
+.menos{
+    margin-left: 25px;
+    margin-top: 350px ;
+    position: absolute;
+}
+
+.arriba{
+    margin-left: 80px;
+    margin-top: 200px ;
+    position: absolute;
+}
+
+.abajo{
+    margin-left: 80px;
+    margin-top: 260px ;
+    position: absolute;
+}
+
+.izqui{
+    margin-left: 25px;
+    margin-top: 225px ;
+    position: absolute;
+}
+
+.derecha{
+    margin-left: 140px;
+    margin-top: 225px ;
+    position: absolute;
+}
+
+.flechita{
+    margin-left: 140px;
+    margin-top: 150px ;
+    position: absolute;
+}
+
+.punto{
+    margin-left: 25px;
+    margin-top: 150px ;
+    position: absolute;
+}
+
+.ok{
+    margin-left: 76px;
+    margin-top: 230px ;
+    position: absolute;
+}
+
+.rojo{
+    background-color: #e61616;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 380px;
+    width: 30px;
+    height: 15px;
+    
+}
+.verde{
+    background-color: #14da14;
+    position: absolute;
+    margin-left: 61px;
+    margin-top: 380px;
+    width: 30px;
+    height: 15px;
+    
+}
+.amarillo{
+    background-color: #bee418;
+    position: absolute;
+    margin-left: 99px;
+    margin-top: 380px;
+    width: 30px;
+    height: 15px;
+    
+}
+.azul{
+    background-color: #1a16e6;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 380px;
+    width: 30px;
+    height: 15px;
+    
+}
+
+.smart{
+    background-color: #e61616;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 290px;
+}
+
+.you{
+    position: absolute;
+    margin-left: 65px ;
+    margin-top: 320px ;
+}
+
+.net{
+    background-color: aliceblue;
+    position: absolute;
+    margin-left: 65px ;
+    margin-top: 350px ;
+}
+
+.cambiar1{
+    margin-left: 150px;
+    margin-top: 300px ;
+    position: absolute;
+}
+
+.cambiar2{
+    margin-left: 150px;
+    margin-top: 350px ;
+    position: absolute;
+}
+
+.mute{
+    margin-left: 25px;
+    margin-top: 20px ;
+    position: absolute;
+}
+
+.atras{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 400px;
+}
+
+.pausa{
+    position: absolute;
+    margin-left: 61px;
+    margin-top: 400px;
+}
+
+.quitar{
+    position: absolute;
+    margin-left: 108px;
+    margin-top: 400px;
+}
+
+.adelante{
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 400px;
+}
+.sle{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 425px;
+    
+}
+
+.fac{
+    position: absolute;
+    margin-left: 61px;
+    margin-top: 450px;
+}
+
+.USB{
+    position: absolute;
+    margin-left: 108px;
+    margin-top: 425px;
+}
+
+.a{
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 450px;
+}
